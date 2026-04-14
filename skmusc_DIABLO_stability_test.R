@@ -17,7 +17,7 @@ run_diablo_once <- function(
 ){
   library(mixOmics)
   library(dplyr)
-  
+  #
   #-------------------------------------------#
   # Step 1: Build training objects
   #-------------------------------------------#

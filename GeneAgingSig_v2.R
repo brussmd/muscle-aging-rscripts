@@ -16,7 +16,7 @@ library(stringr)
 
 
 #-----Create old_core_no_pwr_deg ENTREZID gene list----------------#
-#oldsed_vs_yngsed_GO_core_enrich_genes <- read_csv("oldsed_vs_yngsed_GO_core_enrich_genes.csv")
+oldsed_vs_yngsed_GO_core_enrich_genes <- read_csv("oldsed_vs_yngsed_GO_core_enrich_genes.csv")
 head(oldsed_vs_yngsed_GO_core_enrich_genes)
 
 oldsed_core_genes <- oldsed_vs_yngsed_GO_core_enrich_genes %>%
@@ -24,7 +24,7 @@ oldsed_core_genes <- oldsed_vs_yngsed_GO_core_enrich_genes %>%
   unique()
 length(oldsed_core_genes) #should be 833 genes
 
-#oldrapa_gene_merged_df <- read_csv("oldrapa_gene_merged_df.csv")
+oldrapa_gene_merged_df <- read_csv("oldrapa_gene_merged_df.csv")
 head(oldrapa_gene_merged_df)
 
 oldrapa_gene_merged_df %>%
@@ -544,7 +544,7 @@ intervention_colors <- c(
   "OldPwrFRap" = "#9E1F63"
 )
 
-#-----------------------------
+#-----------------------------#
 # Plot
 #-----------------------------
 NES_intervention_hoz_barplot <- ggplot(nes_df, aes(x = NES, y = Intervention, fill = Intervention)) +
